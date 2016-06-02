@@ -29,6 +29,9 @@ gem 'devise'
 # reCaptcha
 gem 'recaptcha', require: 'recaptcha/rails'
 
+# OmniAuth
+gem 'omniauth-facebook'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
