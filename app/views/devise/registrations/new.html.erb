@@ -14,8 +14,8 @@
   </div>
 
   <div class="field">
-    <%= f.label :surename %><br />
-    <%= f.text_field :surename %><br />
+    <%= f.label :surname %><br />
+    <%= f.text_field :surname %><br />
   </div>
 
   <div class="field">
@@ -29,6 +29,10 @@
   <div class="field">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= recaptcha_tags %>
   </div>
 
   <div class="actions">
