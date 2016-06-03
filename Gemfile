@@ -27,14 +27,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 # reCaptcha
-<<<<<<< HEAD
  gem 'recaptcha', require: 'recaptcha/rails'
 
 # simple_captcha
 # gem 'galetahub-simple_captcha', :require => 'simple_captcha'
-=======
-gem 'recaptcha', require: 'recaptcha/rails'
->>>>>>> origin/master
 
 # OmniAuth
 gem 'omniauth-facebook'
