@@ -15,6 +15,9 @@
 /log/*
 !/log/.keep
 /tmp
+<<<<<<< HEAD
 
 .env
 Procfile
+=======
+>>>>>>> origin/master

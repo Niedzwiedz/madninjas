@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, :omniauth_providers => [:facebook]
 
+<<<<<<< HEAD
   validates_presence_of :name, :surname
 
   def self.from_omniauth(auth)
@@ -20,6 +21,14 @@ class User < ActiveRecord::Base
       user.name = auth.info.first_name
       user.surname = auth.info.last_name
       user.password = Devise.friendly_token[0,20]
+=======
+  def self.from_omniauth(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+      user.email = auth.info.email
+      user.password = Devise.friendly_token[0,20]
+      user.name = auth.info.first_name
+      user.surname = auth.info.last_name
+>>>>>>> origin/master
     end
   end
 
